@@ -5,13 +5,13 @@ import {
   IntroTitle,
 } from "./styles";
 import introImg from "../../../../assets/intro-img.png";
-// import { ShoppingCart, Package, Timer, Coffee } from "phosphor-react";
-// import { useTheme } from "styled-components";
+import { ShoppingCart, Package, Timer, Coffee } from "phosphor-react";
+import { useTheme } from "styled-components";
 import { RegularText } from "../../../../components/Typography";
-// import { InfoWithIcon } from "../../../../components/InfoWithIcon";
+import { InfoWithIcon } from "../../../../components/InfoWithIcon";
 
 export function Intro() {
-  // const { colors } = useTheme();
+  const { colors } = useTheme();
 
   return (
     <IntroContainer>
@@ -28,7 +28,7 @@ export function Intro() {
           </section>
 
           <BenefitsContainer>
-            {/* <InfoWithIcon
+            <InfoWithIcon
               iconBg={colors["brand-yellow-dark"]}
               icon={<ShoppingCart weight="fill" />}
               text="Compra simples e segura"
@@ -47,7 +47,7 @@ export function Intro() {
               iconBg={colors["brand-purple"]}
               icon={<Coffee weight="fill" />}
               text="O café chega fresquinho até você"
-            /> */}
+            />
           </BenefitsContainer>
         </div>
 
