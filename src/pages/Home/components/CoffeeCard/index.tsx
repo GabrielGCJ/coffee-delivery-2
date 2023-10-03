@@ -37,14 +37,14 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
     setQuantity((state) => state - 1);
   }
 
-  const { addCoffeeToCart } = useCart();
+  // const { addCoffeeToCart } = useCart();
 
   function handleAddToCart() {
     const coffeeToAdd = {
       ...coffee,
       quantity,
     };
-    addCoffeeToCart(coffeeToAdd);
+    // addCoffeeToCart(coffeeToAdd);
   }
 
   const formattedPrice = formatMoney(coffee.price);

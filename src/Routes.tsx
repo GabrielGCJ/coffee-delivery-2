@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "./pages/Home";
-import { CompletedOrderPage } from "./pages/completeOrder";
+import { CompletedOrderPage } from "./pages/CompleteOrder";
 import { DefaultLayout } from "./layouts/DefaltLayout";
 
 export function Router() {
