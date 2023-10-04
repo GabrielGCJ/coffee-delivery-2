@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "./pages/Home";
-import { CompletedOrderPage } from "./pages/CompleteOrder";
+import { CompleteOrderPage } from "./pages/CompleteOrder";
 import { DefaultLayout } from "./layouts/DefaltLayout";
 
 export function Router() {
@@ -8,7 +8,7 @@ export function Router() {
     <Routes>
         <Route path="/" element={<DefaultLayout />}>
             <Route path="/" element={<HomePage />} />        
-            <Route path="/completedOrder" element={<CompletedOrderPage />} />        
+            <Route path="/completeOrder" element={<CompleteOrderPage />} />        
         </Route>
     </Routes>
   );
