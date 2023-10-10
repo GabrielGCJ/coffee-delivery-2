@@ -9,6 +9,7 @@ import { Trash } from "phosphor-react";
 // import { CartItem } from "../../../../contexts/CartContext";
 // import { useCart } from "../../../../hooks/useCart";
 import { formatMoney } from "../../../../utils/formatMoney";
+import { coffees } from "../../../../data/coffees";
 
 // interface CoffeeCartCardProps {
 //   coffee: CartItem;
@@ -29,16 +30,16 @@ export function CoffeeCartCard({ coffee }: any) {
   //   removeCartItem(coffee.id);
   // }
 
-  const coffeeTotal = coffee.price * coffee.quantity;
+  // const coffeeTotal = coffee.price * coffee.quantity;
 
-  const formattedPrice = formatMoney(coffeeTotal);
+  // const formattedPrice = formatMoney(coffeeTotal);
 
   return (
     <CoffeeCartCardContainer>
       <div>
-        <img src={`/coffees/${coffee.photo}`} />
+        <img src={`/coffees/${coffees[1].photo}`} />
         <div>
-          <RegularText color="subtitle">{coffee.name}</RegularText>
+          <RegularText color="subtitle">Expresso Tradicional</RegularText>
           <ActionsContainer>
             {/* <QuantityInput
               // onIncrease={handleIncrease}
@@ -57,7 +58,7 @@ export function CoffeeCartCard({ coffee }: any) {
         </div>
       </div>
 
-      <p>R$ {formattedPrice}</p>
+      {/* <p>R$ {formattedPrice}</p> */}
     </CoffeeCartCardContainer>
   );
 }
