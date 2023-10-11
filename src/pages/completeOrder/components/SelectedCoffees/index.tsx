@@ -1,6 +1,7 @@
 // import { useCart } from "../../../../hooks/useCart";
 import { TitleText } from "../../../../components/Typography";
 import { CoffeeCartCard } from "../CoffeeCartCard";
+import { ConfirmationSection } from "./ConfirmationSection";
 // import { CoffeeCartCard } from "../CoffeeCartCard";;
 // import { ConfirmationSection } from "./ConfirmationSection";
 import { DetailsContainer, SelectedCoffeesContainer } from "./styles";
@@ -23,6 +24,7 @@ export function SelectedCoffees() {
         ))} */}
 
         {/* <ConfirmationSection /> */}
+        <ConfirmationSection />
       </DetailsContainer>
     </SelectedCoffeesContainer>
   );

@@ -10,6 +10,7 @@ import { Trash } from "phosphor-react";
 // import { useCart } from "../../../../hooks/useCart";
 import { formatMoney } from "../../../../utils/formatMoney";
 import { coffees } from "../../../../data/coffees";
+import { QuantityInput } from "../../../../components/QuantityInput";
 
 // interface CoffeeCartCardProps {
 //   coffee: CartItem;
@@ -41,12 +42,12 @@ export function CoffeeCartCard({ coffee }: any) {
         <div>
           <RegularText color="subtitle">Expresso Tradicional</RegularText>
           <ActionsContainer>
-            {/* <QuantityInput
+             <QuantityInput
               // onIncrease={handleIncrease}
               // onDecrease={handleDecrease}
-              quantity={coffee.quantity}
+              quantity={1}
               size="small"
-            /> */}
+            />
             <RemoveButton
               type="button" 
               // onClick={handleRemove}
